@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="section-intro">
+  <div class="section-intro__wrap">
+    <div class="row">
+      <h1 class="section-intro__title">{{ page.title }}</h1>
+      <p class="section-intro__description">{{ page.intro }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-articles section--padding-top">
+  <div class="row">
+    {% include section-nav.html context=page.url %}
+  </div>
+</div>
+
+{% include competition.html %}
+
+{% include section-offers.html %}

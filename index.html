@@ -1,0 +1,58 @@
+---
+layout: default
+title: Overview
+class: overview
+nav-order: 1
+---
+
+
+<section class="overview-intro">
+  <div class="row row--padding overview-intro__title">
+    <h1 class="text-title"><span>Summer In</span> Switzer<wbr>land</h1>
+    <img class="image-title js-svg-swap" src="{{site.baseurl}}/img/content/site-title.png" alt="Sumer In Switzerland">
+  </div>
+  <div class="overview-intro__description">
+    <div class="row row--padding">
+      <div class="overview-intro__description-wrap">
+        <p class="align-center">There isn’t a country in Europe that can get our wanderlust going like Switzerland does. We've brought together a Swiss A-team to show you why we love it so much. From leading Instagrammers and local mountain bikers, to award-winning Swiss photographers, we’ve gone to every corner of the country and packed Everything together to create a guide like no other.</p>
+        <a class="subtle-btn" href="{{site.baseurl}}/about">Meet Our Experts <img class="subtle-btn__icon js-svg-swap" src="{{site.baseurl}}/img/icon/long-arrow-right.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="overlap--small bg-color bg-color-correct">
+  <div class="row row--padding row--columns-6-6-gutters row--columns-vertical-align">
+    <div class="row__column row__column--padding">
+      <h2>Why Switzerland?</h2>
+      <p>Switzerland deserves more than a typical destination guide (the internet is already full of those). Secret Escapes want to give you a real under the skin feel for one of the most beautiful places in the world. We’re itching to show you just how spectacular it is in summer.</p>
+      <p>Secret Escapes and Swiss International Airlines will also be bringing you exclusive offers on flights and hotels so there will be no excuse not to book your flight immediately.</p>
+      <p>With more than 170 weekly SWISS flights from £55 one-way*, it’s easy to make Switzerland your adventure playground this summer.</p>
+    </div>
+    <div class="row__column overlap__image">
+      <div class="img-block">
+        <div class="img-block__major bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/sunny-city.jpg');"></div>
+        <div class="img-block__minor">
+          <div class="img-block__image bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/cycle-to-mountain.jpg');"></div>
+          <div class="img-block__image bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{site.baseurl}}/img/content/cabins.jpg');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section--padding-top overview-nav overlap--large">
+  <div class="row row--padding">
+    <!-- gets all content sections -->
+    {% assign site-sections = site.html_pages | sort:"nav-order" %}
+    {% for section in site-sections %}
+      {% if section.layout == "section" %}
+        <div class="overview-nav__item row__column overlap__image" style="background-image: url('{{site.baseurl}}/img/bg/overview-nav/{{section.class}}.jpg');"><a class="overview-nav__link" href="{{site.baseurl}}{{ section.url }}"><span class="overview-nav__wrap">{{section.title}}</span></a></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include competition.html %}
+
+{% include section-offers.html %}

@@ -1,0 +1,127 @@
+// styles for the article pages - article layout
+
+
+.article {
+  padding-top: 1px; margin-top: -1px; // fix for parent inheriting child margin
+  &__bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 26.867em;
+    background-size: cover;
+    background-position: center;
+    background-color: $sw-black;
+    z-index: $z-background;
+    @include border-bottom;
+  }
+  &__wrap {
+    margin-top: 7.5em;
+  }
+  &__nav-link {
+    position: absolute;
+    top: 4.467em;
+    z-index: $z-content;
+    width: 14.667em;
+    padding-top: 0.967em;
+    padding-left: 2.933em;
+    padding-bottom: 0.967em;
+    text-align: center;
+    color: $white;
+    font-family: $title-font-family;
+    font-weight: 400;
+    letter-spacing: .2em;
+    line-height: 1;
+    background-color: $sw-black-75;
+    @include transition;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 2.933em;
+      background-color: $sw-black-75;
+      background-size: 1.2em;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: rotate(-90deg);
+    }
+    &--previous {
+      left: 0;
+      transform: rotate(90deg) translateY(-2.888em);
+      transform-origin: top left;
+      &:before {
+        background-image: url("../img/icon/arrow-left.png");
+        .svg & { background-image: url("../img/icon/arrow-left.svg"); }
+      }
+    }
+    &--next {
+      right: 0;
+      transform: rotate(90deg) translateX(14.667em);
+      transform-origin: top right;
+      &:before {
+        background-image: url("../img/icon/arrow-right.png");
+        .svg & { background-image: url("../img/icon/arrow-right.svg"); }
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      background-color: $sw-black;
+    }
+  }
+  &__page {
+    z-index: $z-content-upper;
+    margin-left: 2.933em;
+    margin-right: 2.933em;
+    padding: 0 2.933em 2.933em;
+    background-color: $white;
+    @include box-shadow;
+    > p:first-of-type {
+      font-size: 1.2em;
+      line-height: 1.66
+    }
+    h2 {
+      margin-bottom: 1em;
+      text-align: center;
+      font-size: 2.488em;
+    }
+  }
+  &__header {
+    padding-top: 2.25em;
+    padding-bottom: 2.25em;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: .1em;
+    font-size: 4em;
+    font-family: $title-font-family;
+    font-weight: 300;
+    letter-spacing: .2em;
+  }
+  &__author {
+    font-family: $title-font-family;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    font-size: 0.833em;
+    font-weight: 500;
+    color: $sw-darker-beige !important;
+  }
+}
+
+.top-tips {
+  text-align: center;
+  padding: 2.2em;
+  h3 {
+    line-height: 1;
+    margin-bottom: .5em;
+  }
+  ol {
+    text-align: left;
+    font-size: 1em;
+  }
+  li {
+    padding-top: .25em;
+    padding-bottom: .25em;
+  }
+}

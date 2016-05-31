@@ -1,0 +1,14 @@
+{% capture html %}
+<ul class="section-nav">
+  {% assign sections = site.html_pages | sort: "path" | sort: "article-order" %}
+  {% for section in sections %}
+    {% capture slug    %}{{ section.url | split: "/"   | last                       }}{% endcapture %}
+    {% capture current %}{{ section.url | remove: slug | remove: "//" | append: "/" }}{% endcapture %}
+    {% if current == include.context %}
+    <li class="nav__item nav__item--{{ section.class }}">
+      <a class="nav__link" href="{{ site.baseurl }}{{ section.url }}">{{ section.title }}</a>{% if include.amount == "all-levels" %}{% include section-nav-list.html context=section.url %}{% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}

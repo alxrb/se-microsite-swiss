@@ -1,0 +1,108 @@
+// styles for the mains site secitons - sections layout
+
+
+.section-intro {
+  padding-top: 3.333em;
+  padding-bottom: 0;
+  color: $white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-color: $sw-black;
+  @include border-bottom;
+  &__wrap {
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  &__title {
+    color: $white !important;
+    font-family: $title-font-family;
+    font-weight: 300;
+    letter-spacing: .25em;
+    text-shadow: 0px 0px 100px rgb(23,40,54);
+  }
+  &__description {
+    max-width: $large;
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    background-color: rgba(23,40,54,.2);
+    box-shadow: 0px 0px 50px 50px rgba(23,40,54,.2);
+  }
+}
+
+.section-article {
+  position: relative;
+  height: 35em;
+  color: $white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $sw-black;
+  @include border-bottom;
+  @include box-shadow;
+  & + & {
+    margin-top: 2.2em;
+  }
+  &__bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+
+  }
+  &__wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1.5em;
+  }
+  &__title,
+  h2 {
+    margin-bottom: 0;
+    font-size: 4.4em;
+    font-family: $title-font-family;
+    font-weight: 300;
+    color: $white !important;
+    line-height: 1.2;
+    letter-spacing: .2em;
+    text-align: left;
+  }
+  &__description {
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  @include bp( large ){
+    height: 20em;
+    &__wrap {
+      width: 60%;
+      padding-left: 2.533em;
+      padding-right: 2.533em;
+      padding-bottom: 1.66em;
+    }
+  }
+}
+
+.section-outdoor .section-intro,
+.section-outdoor .article__bg     { background-image: url("../img/bg/outdoor.jpg"); }
+.section-relax .section-intro,
+.section-relax .article__bg       { background-image: url("../img/bg/relax.jpg"); }
+.section-city .section-intro,
+.section-city .article__bg        { background-image: url("../img/bg/city.jpg"); }
+.section-travel .section-intro,
+.section-travel .article__bg      { background-image: url("../img/bg/travel.jpg"); }
+.section-about .section-intro,
+.section-about .article__bg       { background-image: url("../img/bg/about.jpg"); }

@@ -1,0 +1,22 @@
+<div class="offers section--padding-top row">
+  <div class="row row--padding">
+    <h2 class="offers__title">
+      Exclusive Offers
+      <div class="offers__sub-title"><span>Extra £25 off</span></div>
+    </h2>
+    <p class="offers__intro">Kick-start your Swiss summer break with these incredible offers. And we’re giving you an extra £25 off each one, so there’s really no excuse not to start packing.</p>
+  </div>
+  <div class="row">
+    <!-- shows offers in page category -->
+    {% assign offers = site.offers | sort: 'price' %}
+    {% for offer in offers %}
+      {% if page.class == "overview" %}
+        {% include offer-block.html %}
+      {% else %}
+        {% include offer-block-full.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include swiss-promo.html %}

@@ -1,0 +1,132 @@
+// all custom styles for the site
+
+
+// ---------- button ----------
+
+.btn {
+  @include transition;
+  display: inline-block;
+  width: 100%;
+  padding: .5em 1.5em;
+  border: 1px solid $sw-red;
+  font-weight: 400;
+  color: $sw-red;
+  text-align: center;
+  &:hover {
+    color: white;
+    background-color: $sw-red;
+    text-decoration: none;
+  }
+  &--red {
+    background-color: $sw-red;
+    color: white;
+    border: 0;
+    &:hover {
+      background-color: $sw-dark-red;
+    }
+  }
+  &--white {
+    background-color: $white;
+    border: 0;
+    &:hover {
+      background-color: $sw-red;
+    }
+  }
+  * + & { margin-top: 1em; }
+}
+
+.subtle-btn {
+  display: inline-block;
+  font-size: .867em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  &__icon {
+    display: inline-block;
+    width: auto;
+    height: 10px;
+    vertical-align: baseline;
+    margin-left: .5em;
+    margin-bottom: -1px;
+    @include transition;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:hover .subtle-btn__icon {
+    margin-left: 1.25em;
+  }
+}
+
+.bg-color { background-color: $sw-lighter-beige; }
+
+.overlap__image { @include box-shadow(); }
+.overlap--small {
+  @include bp( xlarge ){
+    margin-bottom: 2.933em;
+    .overlap__image {
+      transform: translateY(2.933em);
+    }
+  }
+}
+.overlap--large {
+  @include bp( xlarge ){
+    margin-bottom: 4.4em;
+    .overlap__image {
+      transform: translateY(4.4em);
+    }
+  }
+}
+
+.img-block {
+  &__image {
+    float: left;
+    width: 50%;
+  }
+}
+
+.swiss-promo {
+  background-color: $sw-black;
+  background-image: url("../img/bg/swiss-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include border-bottom;
+  .row__column {
+    margin: 2.986em 2.2em;
+    @include bp( large ){
+      width: 48%;
+    }
+  }
+  h3 {
+    line-height: 1.33;
+  }
+}
+
+
+.line-title {
+  overflow: hidden;
+  text-align: center;
+  // line either side of title effect
+  span {
+    position: relative;
+    display: inline-block;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      // margin-top: -1px;
+      width: 300%;
+      background-color: $sw-red-33;
+    }
+    &:before {
+      right: 100%;
+      margin-right: 1em;
+    }
+    &:after {
+      left: 100%;
+      margin-left: 1em;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<div class="site-footer__padding"></div>
+<footer class="site-footer">
+  <div class="row row--padding row--columns-6-6-gutters row--columns-vertical-align">
+    <div class="row__column site-footer__nav">
+      {% assign site-sections = site.html_pages | sort:"nav-order" %}
+      {% for section in site-sections %}
+        {% if section.layout == "section" %}
+        <div class="site-footer__nav-section">
+          <h4 class="site-footer__nav-title"><a href="{{ section.url }}">{{section.title}}</a></h4>
+          {% include section-nav-list.html context=section.url amount="all-levels" %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="row__column">
+      <div class="about-footer row row--columns-6-6-gutters row--columns-vertical-align">
+        <div class="about-footer__image row__column">
+          <a href="{{site.baseurl}}/about">
+            <div class="bg-image-ratio bg-image-ratio--1-1" style="background-image: url('{{site.baseurl}}/img/content/gabriel.jpg');"></div>
+          </a>
+        </div>
+        <div class="row__column">
+          <h3 class="about-footer__title">About Our Experts</h3>
+          <p class="about-footer__description">We've brought together a Swiss A-team to show you why we love it so much. From leading Instagrammers and local mountain bikers to award-winning Swiss photographers.</p>
+          <a class="subtle-btn about-footer__btn" href="{{site.baseurl}}/about">Meet Our Experts <img class="subtle-btn__icon js-svg-swap" src="{{site.baseurl}}/img/icon/long-arrow-right--red.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer__copyright row">
+    <p>© Copyright <span class="js-year">2016</span> Secret Escapes</p>
+    {% if page.class != "competition" %}
+      <div class="site-footer__terms">
+        {% if page.class == "overview" %}
+          <p>*Hand luggage only fare. Price quoted per person including airport taxes and surcharges departing from London Heathrow to Geneva. Price correct at the time of production and is subject to change and exchange rate variations. Availability is limited. On bookings made before 31/05/16 for some payment methods a charge of £4.50 may apply. Bookings made after 31/05/16 for some payment methods a charge of 1.65% may apply.</p>
+        {% endif %}
+        <p>£25 can be claimed back after booking a break to Switzerland. The £25 will refunded directly back on to the card used to process the transaction. Please email media.team@secretescapes.com to claim your £25 cash back and state your transaction ID and email address that the booking was made under. This is valid on all booking made between 27.05.2016 and 31.07.2016.</p>
+        <p>To claim your SWISS discount of £25 off please quote, SWISSESCAPE16 at checkout. Discount applies on minimum spend offer: £95. This is valid on the first 1000 bookings made between 23/05/2016 until 31/07/2016 travelling between  23/05/2016 until 30/09/2016. Valid on flights between: London City, Heathrow, Manchester and Birmingham to either Zurich or Geneva. Discount can only be redeemed on: SWISS.COM</p>
+      </div>
+    {% endif %}
+  </div>
+  <div class="site-footer__top">
+    <a class="site-footer__top-link" href="#top">Back To Top</a>
+  </div>
+</footer>

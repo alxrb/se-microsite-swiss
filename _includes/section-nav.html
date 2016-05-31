@@ -1,0 +1,16 @@
+{% capture html %}
+  {% assign sections = site.html_pages | sort: "path" | sort: "article-order" %}
+  {% for section in sections %}
+    {% capture slug    %}{{ section.url | split: "/"   | last                       }}{% endcapture %}
+    {% capture current %}{{ section.url | remove: slug | remove: "//" | append: "/" }}{% endcapture %}
+    {% if current == include.context %}
+    <div class="section-article section-article--{{ section.class }}" style="background-image: url('{{site.baseurl}}/img/bg/{{section.class}}.jpg');">
+      <a class="section-article__link" href="{{ site.baseurl }}{{ section.url }}"></a>
+      <div class="section-article__wrap">
+        <h2 class="section-article__title">{{ section.title }}</h2>
+        <p class="section-article__description">{{ section.description }}<!--  <img class="subtle-btn__icon js-svg-swap" src="{{site.baseurl}}/img/icon/long-arrow-right.png" alt=""> --></p>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}

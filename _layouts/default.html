@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  {% assign page-section = page.url | split: "/" %}
+
+  <body id="top" class="{% if page-section[1] == null %}section-overview {% else %}section-{{ page-section[1] }} {% endif %}{% if page.class %}page-{{ page.class }} {% endif %}" data-current-section="{% if page-section[1] == null %}{{ page.class }}{% else %}{{ page-section[1] }}{% endif %}">
+
+    <!-- Google Tag Manager -->
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TH4FN5"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TH4FN5');</script>
+    <!-- End Google Tag Manager -->
+
+    {% include header.html %}
+
+    <div class="page-content">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

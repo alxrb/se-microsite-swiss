@@ -1,0 +1,126 @@
+// styles for the site footer
+
+
+.site-footer {
+  position: relative;
+  padding-top: 6em;
+  padding-bottom: 4em;
+  text-align: center;
+  color: $sw-dark-grey;
+  letter-spacing: .033em;
+  background-color: $light-grey;
+  text-align: justify;
+  &__padding {
+    padding-top: 6em;
+  }
+  &__nav {
+    @include layout(6 1/2);
+    @include clearfix();
+  }
+  &__nav-section {
+    @include gallery(3 );
+    &:nth-child(n+3){
+      margin-top: 1.2em;
+    }
+  }
+  &__nav-title {
+    margin-bottom: .25em;
+    padding-bottom: .25em;
+    text-transform: uppercase;
+    font-size: .833em;
+    font-weight: bold;
+    border-bottom: 3px solid $white;
+  }
+  .section-nav {
+    font-weight: 300;
+    li {
+      padding-top: .25em;
+      &:before {
+        content: '–';
+        display: inline-block;
+        margin-right: .25em;
+      }
+    }
+  }
+  .section-nav .section-nav {
+    font-size: 1em;
+  }
+  &__copyright {
+    font-size: .833em;
+    padding-bottom: .694em;
+    margin-top: 6em !important;
+    color: $sw-darker-beige;
+    text-align: center;
+  }
+  &__terms {
+    margin: 1em auto 0;
+    font-size: .833em;
+    width: 80%;
+    text-align: justify;
+    text-align-last: center;
+    p + p {
+      margin-top: 1em;
+    }
+  }
+  &__top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  &__top-link {
+    display: inline-block;
+    padding-bottom: 12px;
+    @include transition;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      margin-left: 1em;
+      margin-bottom: -12px;
+      background-color: $white;
+      background-image: url("../img/icon/back-to-top.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 27px;
+      vertical-align: bottom;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      @include transition;
+      .svg & { background-image: url("../img/icon/back-to-top.svg")}
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:hover:after {
+      height: 53px;
+      background-position-y: 33.33%;
+    }
+  }
+}
+
+.about-footer {
+  &__image {
+    @include box-shadow;
+    max-width: $small;
+  }
+  &__title {
+    margin-bottom: .1em;
+    color: $sw-red;
+    letter-spacing: .075em;
+    text-align: left;
+    font-size: 1.467em;
+    font-weight: 300;
+  }
+  &__description {
+    font-size: .833em;
+    line-height: 1.45;
+  }
+  &__btn {
+    margin-top: .75em;
+    font-size: 1em;
+    color: $sw-red;
+  }
+}

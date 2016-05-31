@@ -1,0 +1,110 @@
+// styles for the offer blocks that appear on the terrain pages
+
+
+.offers {
+  text-align: center;
+  &__title {
+    display: inline-block;
+    margin-bottom: ( $margin / 2.2 );
+  }
+  &__sub-title {
+    margin-top: .66em;
+    font-size: 15px;
+    text-transform: uppercase;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    font-weight: 400;
+    // line either side of title effect
+    span {
+      position: relative;
+      display: inline-block;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        margin-top: -.5px;
+        width: 300%;
+        background-color: $sw-red-33;
+      }
+      &:before {
+        right: 100%;
+        margin-right: 1em;
+      }
+      &:after {
+        left: 100%;
+        margin-left: 1em;
+      }
+    }
+  }
+  &__intro {
+    max-width: $large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+    margin-bottom: ( $margin * 3 );
+  }
+}
+
+.offer {
+  position: relative;
+  margin-top: 2.2em;
+  padding-left: 2.2em;
+  &__details {
+    padding-top: 2.2em;
+    padding-right: 2.2em;
+    padding-bottom: 2.2em;
+    text-align: left;
+  }
+  & + & {
+    margin-top: 5.867em;
+  }
+  &__image {
+    padding-right: 2.2em;
+    @include bp ( xlarge ){
+      transform: translateY(-2.2em);
+    }
+    .bg-image-ratio {
+      @include box-shadow;
+    }
+  }
+  &__title {
+    font-size: 1.8em;
+    margin-bottom: .25em;
+  }
+  &__subtitle {
+    color: $sw-darker-beige !important;
+    font-size: 1.2em;
+    letter-spacing: .075em;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 23px;
+      width: 18px;
+      margin-right: .482em;
+      margin-bottom: .2em;
+      vertical-align: middle;
+      background-image: url( "../img/icon/map-pin.png" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+      .svg & { background-image: url( "../img/icon/map-pin.svg" ); }
+    }
+  }
+  &__price {
+    color: $sw-red;
+    font-size: 1.467em;
+    margin-right: 0.25em;
+  }
+  &__was-price {
+    color: $sw-grey;
+    text-decoration: line-through;
+    margin-right: 0.5em;
+  }
+  p + * {
+    margin-top: 0.5em;
+  }
+}

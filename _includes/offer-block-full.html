@@ -1,0 +1,21 @@
+<div class="row row--columns-7-5 row--columns-vertical-align offer bg-color">
+  <div class="row__column offer__image">
+    <a href="{{ offer.url }}">
+      <div class="img-block">
+        <div class="img-block__major bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}.jpg');"></div>
+        <div class="img-block__minor">
+          <div class="img-block__image bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}-01.jpg');"></div>
+          <div class="img-block__image bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}-02.jpg');"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="row__column offer__details">
+    <h2 class="offer__title"><a href="{{ offer.url }}">{{ offer.title }}</a></h2>
+    <h3 class="h4 offer__subtitle">{{ offer.location }}</h3>
+    <p>{{ offer.long-description }}</p>
+    <ul>{{ offer.description-bullets }}</ul>
+    <p><span class="offer__price">£{{ offer.price }}</span> <span class="offer__was-price">£{{ offer.was-price }}</span> {{ offer.price-description }}</p>
+    <a href="{{ offer.url }}" class="btn">View Offer</a>
+  </div>
+</div>
