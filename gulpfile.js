@@ -79,4 +79,5 @@ gulp.task('compressImages', function () {
 gulp.task('default', ['build', 'serve']);
 
 // run before uploading to live - compresses images & css
-gulp.task('compress', ['compressImages', 'optimiseCss', 'htmlMinify']);
+// gulp.task('compress', ['compressImages', 'optimiseCss', 'htmlMinify']);
+gulp.task('compress', ['optimiseCss', 'htmlMinify']);

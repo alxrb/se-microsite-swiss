@@ -12,8 +12,8 @@
   background-color: #12334c;
   @include border-bottom;
   &__title {
-    padding-top: 13.333em;
-    padding-bottom: 13.333em;
+    padding-top: 10.417em;
+    padding-bottom: 10.417em;
     font-family: $title-font-family;
     letter-spacing: .25em;
     .image-title {
@@ -40,7 +40,7 @@
         letter-spacing: .4em;
       }
     }
-    @include bp ( medium ){
+    @include bp( small ){
       .text-title {
         position: absolute;
         left: -9999em;
@@ -51,9 +51,16 @@
       }
       .image-title {
         position: static;
-        width: 75%;
+        width: 90%;
         height: auto;
         overflow: visible;
+      }
+    }
+    @include bp( large ){
+      padding-top: 13.333em;
+      padding-bottom: 13.333em;
+      .image-title {
+        width: 75%;
       }
     }
   }
@@ -78,13 +85,6 @@
 
 .overview-nav {
   @include layout(12 1/2);
-  @include bp( xlarge ){
-    .row__column { @include span( 6 ); }
-    .row__column:nth-child( even ) { @include span( last 6 ); }
-    &__item:nth-child(n+3){
-      margin-top: gutter();
-    }
-  }
   &__item {
     position: relative;
     display: block;
@@ -99,6 +99,12 @@
     @include box-shadow;
     @include border-bottom;
     @include transition;
+    & + & {
+      margin-top: $margin;
+      @include bp( xlarge ){
+        margin-top: 0;
+      }
+    }
     &:nth-child(odd){
       transform: translateY(0);
     }
@@ -151,6 +157,13 @@
       opacity: 0;
       @include transition;
       .svg & { background-image: url("../img/icon/arrow-right.svg"); }
+    }
+  }
+  @include bp( xlarge ){
+    .row__column { @include span( 6 ); }
+    .row__column:nth-child( even ) { @include span( last 6 ); }
+    &__item:nth-child(n+3){
+      margin-top: gutter();
     }
   }
 }

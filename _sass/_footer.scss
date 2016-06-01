@@ -3,13 +3,15 @@
 
 .site-footer {
   position: relative;
-  padding-top: 6em;
   padding-bottom: 4em;
   text-align: center;
   color: $sw-dark-grey;
   letter-spacing: .033em;
   background-color: $light-grey;
   text-align: justify;
+  @include bp( large ){
+    padding-top: 1em;
+  }
   &__padding {
     padding-top: 6em;
   }
@@ -34,6 +36,7 @@
   .section-nav {
     font-weight: 300;
     li {
+      text-align: left;
       padding-top: .25em;
       &:before {
         content: '–';
@@ -48,7 +51,6 @@
   &__copyright {
     font-size: .833em;
     padding-bottom: .694em;
-    margin-top: 6em !important;
     color: $sw-darker-beige;
     text-align: center;
   }
@@ -102,9 +104,14 @@
 }
 
 .about-footer {
+  padding-top: 1.5em;
+  text-align: center;
   &__image {
     @include box-shadow;
-    max-width: $small;
+    width: 100%;
+    max-width: ( $small / 1.5 );
+    margin-left: auto;
+    margin-right: auto;
   }
   &__title {
     margin-bottom: .1em;
@@ -113,14 +120,51 @@
     text-align: left;
     font-size: 1.467em;
     font-weight: 300;
+    text-align: center;
+    line-height: 1.33;
   }
   &__description {
     font-size: .833em;
-    line-height: 1.45;
+    line-height: 1.66;
+    text-align: justify;
   }
   &__btn {
     margin-top: .75em;
     font-size: 1em;
     color: $sw-red;
+  }
+  @include bp( large ){
+    padding-top: 0;
+    &__text {
+      padding-top: ( $margin / 2 );
+    }
+  }
+  @include bp( xlarge ){
+    @include layout(6 1/2);
+    @include clearfix();
+    text-align: left;
+    .flexbox & {
+      display: flex;
+      align-items: center;
+      &__image {
+        margin-right: auto !important;
+      }
+      &__text {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+      }
+    }
+    .row__column {
+      @include gallery(3);
+    }
+    &__description {
+      text-align: left;
+    }
+    &__title {
+      text-align: left;
+    }
+    &__text {
+      padding-top: 0;
+    }
   }
 }

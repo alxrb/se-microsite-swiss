@@ -7,13 +7,24 @@
     font-size: 1.467em;
     font-weight: 300;
     margin-bottom: 1em;
+    line-height: 1.2;
   }
   &__iframe-wrap {
-    height: 26.667em;
+    height: 33.33em;
     max-width: $xlarge;
     margin-left: auto;
     margin-right: auto;
     background-color: $white;
+    -webkit-overflow-scrolling:touch;
+    overflow:auto;
+    @include bp( large ){
+      height: 26.667em;
+      overflow: visible;
+    }
+    .touch & {
+      overflow: auto;
+      -webkit-overflow-scrolling:touch;
+    }
   }
   &__iframe {
     width: 100%;
@@ -36,19 +47,18 @@
     text-align: center;
   }
   &__title {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3.533em;
+    font-size: 2.488em;
     font-family: $title-font-family;
     font-weight: 300;
     letter-spacing: .2em;
     color: $white !important;
-    // background-color: rgba(8,35,57,.2);
-    // box-shadow: 0px 0px 100px 100px rgba(8,35,57,.2);
+    word-break: break-word;
+    @include bp( large ){
+      font-size: 3.533em;
+    }
   }
   &__content {
-    width: 50%;
+    max-width: $medium;
     margin-left: auto;
     margin-right: auto;
     font-weight: 400;
@@ -60,13 +70,28 @@
   margin-left: auto;
   margin-right: auto;
   &__row {
-    display: table;
+    text-align: center;
   }
   &__logo {
-    display: table-cell;
-    vertical-align: middle;
     width: 33.33%;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__logo + &__logo {
+    padding-top: $margin;
+  }
+  @include bp( medium ){
+    &__row {
+      display: table;
+    }
+    &__logo {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+    &__logo + &__logo {
+      padding-top: 0;
+    }
   }
 }

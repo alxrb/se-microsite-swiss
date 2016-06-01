@@ -5,10 +5,6 @@
 //        general
 ///////////////////////////////////////
 
-// NEED TO DELETE THE FIT TEXT AND REMOVE FROM BOWER
-  // $(".special-title__sub").fitText(1.66);
-  // $(".special-title__main").fitText();
-
   // css tricks snippet - http://css-tricks.com/snippets/jquery/smooth-scrolling/
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -27,6 +23,11 @@
 
   // inserts current year
   $('.js-year').html(new Date().getFullYear());
+
+  // detects touch device
+  if ("ontouchstart" in document.documentElement){
+    $('html').addClass('touch');
+  }
 
 
 ///////////////////////////////////////

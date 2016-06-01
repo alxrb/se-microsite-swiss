@@ -82,11 +82,12 @@
     float: left;
     width: 50%;
   }
+  @include clearfix;
 }
 
 .swiss-promo {
   background-color: $sw-black;
-  background-image: url("../img/bg/swiss-promo.jpg");
+  background-image: url("../img/bg/swiss-promo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -99,6 +100,9 @@
   }
   h3 {
     line-height: 1.33;
+  }
+  @include bp(large){
+    background-image: url("../img/bg/swiss-promo.jpg");
   }
 }
 
@@ -127,6 +131,35 @@
     &:after {
       left: 100%;
       margin-left: 1em;
+    }
+  }
+}
+
+.column-overlap {
+  .row__column:nth-child(odd) {
+    margin-top: 0;
+    padding-top: ( $margin * 1.5 );
+    padding-bottom: ( $margin / 2 );
+  }
+  .row__column:nth-child(even) {
+    margin-top: 0;
+    padding-top: ( $margin / 2 );
+    padding-bottom: ( $margin * 1.5 );
+  }
+  @include bp( large ){
+    .row__column:nth-child(odd),
+    .row__column:nth-child(even) {
+      padding-top: $margin;
+      padding-bottom: $margin;
+    }
+  }
+  @include bp( xxlarge ){
+    margin-bottom: 2.933em;
+    .column-overlap__image:nth-child(n) {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 2.933em;
+      margin-bottom: -2.933em;
     }
   }
 }

@@ -25,9 +25,13 @@ $margin: 2em;
 // }
 
 .section--padding-top {
-  padding-top: 6em;
+  padding-top: 3em;
+  @include bp( large ){
+    padding-top: 6em;
+  }
 }
 
+// not sure if this is actually used?
 .section--padding {
   padding-top: 6em;
   padding-bottom: 6em;
@@ -40,12 +44,8 @@ $margin: 2em;
 }
 
 .row--padding {
-  padding-left: ( $margin / 2 );
-  padding-right: ( $margin / 2 );
-  @include bp( medium ) {
-    padding-left: $margin;
-    padding-right: $margin;
-  }
+  padding-left: $margin;
+  padding-right: $margin;
 }
 .row--margin {
   margin-left: ( $margin / 2 );
@@ -63,12 +63,34 @@ $margin: 2em;
   }
 }
 
-.row__column--padding {
-  margin-top: ( $margin * 1.5 );
-  margin-bottom: ( $margin * 1.5 );
-  @include bp( large ){
-    margin-top: $margin;
-    margin-bottom: $margin;
+// only works for 2 column grids (might change class name)
+.row--column-padding > {
+  .row__column {
+    &:nth-child(odd){
+      padding-top: ( $margin * 1.5 );
+      padding-bottom: ( $margin / 2 );
+    }
+    &:nth-child(even){
+      padding-top: ( $margin / 2 );
+      padding-bottom: ( $margin * 1.5 );
+    }
+    @include bp( large ){
+      &:nth-child(even),
+      &:nth-child(odd) {
+        padding-top: 2em;
+        padding-bottom: 2em;
+      }
+    }
+  }
+  // not sure if needed, will check content to see if this causes problems
+  .row__column + .row__column {
+    margin-top: 0;
+  }
+}
+
+.row--images {
+  .row__column + .row__column {
+    margin-top: 0;
   }
 }
 

@@ -44,31 +44,26 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center !important;
-    margin-bottom: ( $margin * 3 );
+    margin-bottom: ( $margin * 1.5 );
+    @include bp( large ){
+      margin-bottom: ( $margin * 3 );
+    }
   }
 }
 
 .offer {
   position: relative;
-  margin-top: 2.2em;
-  padding-left: 2.2em;
   &__details {
-    padding-top: 2.2em;
-    padding-right: 2.2em;
-    padding-bottom: 2.2em;
     text-align: left;
   }
   & + & {
-    margin-top: 5.867em;
+    margin-top: ( $margin * 1.5 );
+    @include bp( large ){
+      margin-top: 5.867em;
+    }
   }
-  &__image {
-    padding-right: 2.2em;
-    @include bp ( xlarge ){
-      transform: translateY(-2.2em);
-    }
-    .bg-image-ratio {
-      @include box-shadow;
-    }
+  &__image .bg-image-ratio  {
+    @include box-shadow;
   }
   &__title {
     font-size: 1.8em;
@@ -106,5 +101,14 @@
   }
   p + * {
     margin-top: 0.5em;
+  }
+  @include bp( xlarge ){
+    margin-top: 2.2em;
+    &__image {
+      margin-top: -2.2em;
+      margin-bottom: 2.2em;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
   }
 }

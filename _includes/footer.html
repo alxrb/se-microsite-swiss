@@ -1,6 +1,6 @@
 <div class="site-footer__padding"></div>
 <footer class="site-footer">
-  <div class="row row--padding row--columns-6-6-gutters row--columns-vertical-align">
+  <div class="row row--padding row--columns-6-6-gutters row--columns-vertical-align row--column-padding">
     <div class="row__column site-footer__nav">
       {% assign site-sections = site.html_pages | sort:"nav-order" %}
       {% for section in site-sections %}
@@ -13,13 +13,13 @@
       {% endfor %}
     </div>
     <div class="row__column">
-      <div class="about-footer row row--columns-6-6-gutters row--columns-vertical-align">
+      <div class="about-footer row">
         <div class="about-footer__image row__column">
           <a href="{{site.baseurl}}/about">
             <div class="bg-image-ratio bg-image-ratio--1-1" style="background-image: url('{{site.baseurl}}/img/content/gabriel.jpg');"></div>
           </a>
         </div>
-        <div class="row__column">
+        <div class="row__column about-footer__text">
           <h3 class="about-footer__title">About Our Experts</h3>
           <p class="about-footer__description">We've brought together a Swiss A-team to show you why we love it so much. From leading Instagrammers and local mountain bikers to award-winning Swiss photographers.</p>
           <a class="subtle-btn about-footer__btn" href="{{site.baseurl}}/about">Meet Our Experts <img class="subtle-btn__icon js-svg-swap" src="{{site.baseurl}}/img/icon/long-arrow-right--red.png" alt=""></a>

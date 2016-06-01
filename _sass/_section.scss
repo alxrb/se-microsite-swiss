@@ -34,7 +34,7 @@
 
 .section-article {
   position: relative;
-  height: 35em;
+  height: 25.92em;
   color: $white;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,14 +66,12 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1.5em;
+    padding-bottom: $margin;
   }
   &__title,
   h2 {
     margin-bottom: 0;
-    font-size: 4.4em;
+    font-size: 2.986em;
     font-family: $title-font-family;
     font-weight: 300;
     color: $white !important;
@@ -85,8 +83,19 @@
     font-weight: 400;
     line-height: 1.5;
   }
+  @include bp( medium ){
+    height: 22.5em;
+    &__title,
+    h2 {
+      font-size: 3.583em;
+    }
+  }
   @include bp( large ){
-    height: 20em;
+    height: 21.6em;
+    &__title,
+    h2 {
+      font-size: 4.4em;
+    }
     &__wrap {
       width: 60%;
       padding-left: 2.533em;

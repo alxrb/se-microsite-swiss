@@ -274,8 +274,8 @@ $icon-height: 20px;
 .microsite-nav .nav__link {
   transition: background-color $transition-time ease;
   display: block;
-  padding-top: 0.833em;
-  padding-bottom: 0.833em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-left: 1.2em;
   padding-right: 1.2em;
   &:hover {
@@ -284,5 +284,7 @@ $icon-height: 20px;
   @include bp( large ){
     padding-left: 1.8em;
     padding-right: 1.8em;
+    padding-top: 0.833em;
+    padding-bottom: 0.833em;
   }
 }
