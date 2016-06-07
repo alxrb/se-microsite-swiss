@@ -6,7 +6,7 @@
       {% for section in site-sections %}
         {% if section.layout == "section" %}
         <div class="site-footer__nav-section">
-          <h4 class="site-footer__nav-title"><a href="{{ section.url }}">{{section.title}}</a></h4>
+          <h4 class="site-footer__nav-title"><a href="{{site.baseurl}}{{ section.url }}">{{section.title}}</a></h4>
           {% include section-nav-list.html context=section.url amount="all-levels" %}
         </div>
         {% endif %}

@@ -91,7 +91,7 @@
     height: 26em;
     color: $white;
     font-family: $title-font-family;
-    letter-spacing: .5em;
+    letter-spacing: 7.5px; // ie doesn't like em value for letter-spacing
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,9 +104,6 @@
       @include bp( xlarge ){
         margin-top: 0;
       }
-    }
-    &:nth-child(odd){
-      transform: translateY(0);
     }
     &:hover {
       & .overview-nav__wrap {
@@ -124,7 +121,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    font-size: 3.5em;
+    font-size: 3em;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+50,000000+100&0+50,0.33+100 */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMzMiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
@@ -133,6 +130,9 @@
     background: linear-gradient(to bottom,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.33) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#54000000',GradientType=0 ); /* IE6-8 */
     @include transition;
+    @include bp( large ){
+      font-size: 3.5em;
+    }
     &:hover {
       text-decoration: none;
       background-color: $sw-red-6;
@@ -162,8 +162,13 @@
   @include bp( xlarge ){
     .row__column { @include span( 6 ); }
     .row__column:nth-child( even ) { @include span( last 6 ); }
-    &__item:nth-child(n+3){
-      margin-top: gutter();
+    &__item {
+      &:nth-child(n+3){
+        margin-top: gutter();
+      }
+      &:nth-child(2) {
+        margin-top: 4.400em;
+      }
     }
   }
 }

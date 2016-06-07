@@ -1,39 +1,6 @@
 // site header and navigation styles
 
 
-// -------- pre header --------
-
-.site-pre-header {
-  display: none;
-  padding-top: .667em;
-  padding-bottom: .667em;
-  color: darken( $white, 20 );
-  font-size: .9em;
-  font-weight: 400;
-  font-family: $core-font-family;
-  background-color: $se-dark-grey;
-  @include bp( medium ) {
-    display: block;
-  }
-}
-
-.site-pre-header__link {
-  display: inline-block;
-  list-style-type: none;
-  a {
-    @include transition;
-    line-height: 1.728;
-    text-decoration: none;
-    &:hover { color: $white; }
-  }
-  & + li {
-    margin-left: .667em;
-    padding-left: .667em;
-    border-left: 1px solid darken( $white, 20 );
-  }
-}
-
-
 // -------- Main navigation ( core site style ) --------
 
 .site-header {
@@ -216,7 +183,32 @@ $icon-height: 20px;
   overflow: scroll;
   overflow-x: auto;
   overflow-y: hidden;
+  .touch & {
+    padding-right: 66px;
+    &:before {
+      // prompt for horizontal scroll on phone
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-overlay-upper;
+      display: block;
+      width: 66px;
+      height: auto;
+      background-image: url("../img/icon/nav-arrow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 66px auto;
+    }
+  }
   @include bp( xlarge ) {
+    .touch & {
+      padding-right: 0;
+      &:before {
+        display: none;
+      }
+    }
     display: inline-block;
     width: 100%;
     overflow: visible;
@@ -243,29 +235,36 @@ $icon-height: 20px;
   > .section-nav { display: none }
   @include bp( xlarge ){
     width: 16.666666667%;
-  }
-  @include bp( xlarge ){
     > .section-nav {
-      display: block;
+      display: none;
       text-transform: uppercase;
       position: absolute;
-      transform: scaleY(0);
       width: 100%;
       background-color: $sw-red;
       color: $white;
       font-weight: normal;
       overflow: hidden;
       @include transition;
-      transform-origin: top center;
       .nav__link:hover {
         background-color: $sw-dark-red;
       }
       .nav__item + .nav__item {
         border-top: 1px solid $sw-dark-red;
       }
+      .csstransforms.csstransforms3d & {
+        display: block;
+        transform: scaleY(0);
+        transform-origin: top center;
+      }
     }
     &:hover > .section-nav {
-      transform: scaleY(1);
+      display: block;
+      .csstransforms.csstransforms3d & {
+        transform: scaleY(1);
+      }
+      .touch & {
+        display: none;
+      }
     }
   }
 }
@@ -276,15 +275,19 @@ $icon-height: 20px;
   display: block;
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
+  padding-left: 2em;
+  padding-right: 2em;
   &:hover {
     text-decoration: none;
   }
   @include bp( large ){
-    padding-left: 1.8em;
-    padding-right: 1.8em;
+    padding-left: 2.8em;
+    padding-right: 2.8em;
     padding-top: 0.833em;
     padding-bottom: 0.833em;
+  }
+  @include bp( xlarge ){
+    padding-left: 0;
+    padding-right: 0;
   }
 }

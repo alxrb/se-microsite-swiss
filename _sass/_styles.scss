@@ -42,11 +42,10 @@
   padding-bottom: .2em;
   &__icon {
     display: inline-block;
-    width: auto;
-    height: 10px;
-    vertical-align: baseline;
+    width: 22px;
+    height: 9px;
+    vertical-align: middle;
     margin-left: .5em;
-    margin-bottom: -1px;
     @include transition;
   }
   &:hover {
@@ -59,24 +58,6 @@
 
 .bg-color { background-color: $sw-lighter-beige; }
 
-.overlap__image { @include box-shadow(); }
-.overlap--small {
-  @include bp( xlarge ){
-    margin-bottom: 2.933em;
-    .overlap__image {
-      transform: translateY(2.933em);
-    }
-  }
-}
-.overlap--large {
-  @include bp( xlarge ){
-    margin-bottom: 4.4em;
-    .overlap__image {
-      transform: translateY(4.4em);
-    }
-  }
-}
-
 .img-block {
   &__image {
     float: left;
@@ -86,7 +67,7 @@
 }
 
 .swiss-promo {
-  background-color: $sw-black;
+  background-color: $sw-light-beige;
   background-image: url("../img/bg/swiss-promo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -106,21 +87,19 @@
   }
 }
 
-
 .line-title {
   overflow: hidden;
   text-align: center;
-  // line either side of title effect
   span {
     position: relative;
     display: inline-block;
     &:before,
     &:after {
+      // line either side of title effect
       content: '';
       position: absolute;
       top: 50%;
       height: 1px;
-      // margin-top: -1px;
       width: 300%;
       background-color: $sw-red-33;
     }
@@ -131,35 +110,6 @@
     &:after {
       left: 100%;
       margin-left: 1em;
-    }
-  }
-}
-
-.column-overlap {
-  .row__column:nth-child(odd) {
-    margin-top: 0;
-    padding-top: ( $margin * 1.5 );
-    padding-bottom: ( $margin / 2 );
-  }
-  .row__column:nth-child(even) {
-    margin-top: 0;
-    padding-top: ( $margin / 2 );
-    padding-bottom: ( $margin * 1.5 );
-  }
-  @include bp( large ){
-    .row__column:nth-child(odd),
-    .row__column:nth-child(even) {
-      padding-top: $margin;
-      padding-bottom: $margin;
-    }
-  }
-  @include bp( xxlarge ){
-    margin-bottom: 2.933em;
-    .column-overlap__image:nth-child(n) {
-      padding-top: 0;
-      padding-bottom: 0;
-      margin-top: 2.933em;
-      margin-bottom: -2.933em;
     }
   }
 }
