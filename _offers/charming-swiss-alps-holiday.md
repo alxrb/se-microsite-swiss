@@ -7,7 +7,7 @@ description: Seven nights spent in the Swiss Alps, with half board, a resort car
 price: 599
 was-price: 919
 price-description: per person for 7 nights
-url: https://www.secretescapes.com/swiss-alps-wellness-holiday-hotel-allalin-saas-fee/sale
+url: https://www.secretescapes.com/swiss-alps-wellness-holiday-hotel-allalin-saas-fee/sale?utm_source=SE&utm_medium=hub_offer&utm_campaign=swiss_20160607
 long-description: >
                   A seven-night break to the Swiss Alps, with half board, daily packed lunch and afternoon tea, a resort card and all travel
 description-bullets:  >
