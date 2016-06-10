@@ -58,12 +58,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: $z-content-upper;
-
+    z-index: $z-content;
+    @include transition;
   }
   &__wrap {
     position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
     width: 100%;
     padding-bottom: $margin;
@@ -83,6 +84,14 @@
     font-weight: 400;
     line-height: 1.5;
   }
+  &:hover {
+    .section-article__link {
+      background-color: $sw-red-75;
+    }
+  }
+  a:hover {
+    text-decoration: none;
+  }
   @include bp( medium ){
     height: 22.5em;
     &__title,
@@ -97,9 +106,8 @@
       font-size: 4.4em;
     }
     &__wrap {
-      width: 60%;
       padding-left: 2.533em;
-      padding-right: 2.533em;
+      padding-right: 20%;
       padding-bottom: 1.66em;
     }
   }

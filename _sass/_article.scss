@@ -19,6 +19,11 @@
     margin-left: ( $margin / 1.75 );
     margin-right: ( $margin / 1.75 );
   }
+  &__nav {
+    &--top {
+      border-bottom: 1px solid $sw-beige;
+    }
+  }
   &__nav-link {
     position: relative;
     z-index: $z-content;
@@ -27,12 +32,13 @@
     padding-top: 0.833em;
     padding-bottom: 0.833em;
     text-align: center;
-    color: $white;
+    color: $sw-red;
     font-family: $title-font-family;
     font-weight: 400;
     letter-spacing: .2em;
     line-height: 1;
-    background-color: $sw-black-75;
+    background-color: $white;
+    background-color: $sw-lighter-beige-85;
     transition: background-color $transition-time ease;
     &:before {
       // box and left & right arrow icons
@@ -42,7 +48,6 @@
       bottom: 0;
       display: block;
       width: 2.200em;
-      background-color: $sw-black-75;
       background-size: 1em;
       background-repeat: no-repeat;
       background-position: center;
@@ -51,25 +56,28 @@
       padding-left: 2.200em;
       &:before {
         left: 0;
-        background-image: url("../img/icon/arrow-left.png");
-        .svg & { background-image: url("../img/icon/arrow-left.svg"); }
+        background-image: url("../img/icon/arrow-left-red.png");
+        border-right: 1px solid $sw-beige;
+        .svg & { background-image: url("../img/icon/arrow-left-red.svg"); }
       }
     }
     &--next {
-      border-left: 1px solid $sw-black;
+      border-left: 1px solid $sw-beige;
       padding-right: 2.200em;
       &:before {
         right: 0;
-        background-image: url("../img/icon/arrow-right.png");
-        .svg & { background-image: url("../img/icon/arrow-right.svg"); }
+        background-image: url("../img/icon/arrow-right-red.png");
+        border-left: 1px solid $sw-beige;
+        .svg & { background-image: url("../img/icon/arrow-right-red.svg"); }
       }
     }
     &:hover {
       text-decoration: none;
-      background-color: $sw-black;
+      background-color:  $sw-light-beige;
     }
   }
   &__page {
+    position: relative;
     z-index: $z-content-upper;
     padding: 0 ( $margin / 1.25 ) ( $margin / 1.25 );
     background-color: $white;
@@ -104,20 +112,14 @@
     color: $sw-darker-beige !important;
   }
   @include bp( large ){
+    &__nav--bottom {
+      display: none;
+    }
     &__wrap {
       margin-left: auto;
       margin-right: auto;
       padding-left: 2.933em;
       padding-right: 2.933em;
-    }
-    &__nav {
-      margin-left: 2.933em;
-      margin-right: 2.933em;
-    }
-    &__nav-link {
-      padding-top: 0.967em;
-      padding-left: 2.933em;
-      padding-bottom: 0.967em;
     }
     &__page {
       padding: 0 2.933em 2.933em;
@@ -125,34 +127,75 @@
     &__title {
       font-size: 4em;
     }
-    .csstransforms.csstransforms3d & {
-       &__nav {
-        margin-left: auto;
-        margin-right: auto;
+    &__nav {
+      margin-left: 2.933em;
+      margin-right: 2.933em;
+    }
+    &__nav-link {
+      padding-top: 0.967em;
+      // padding-left: 2.933em;
+      padding-bottom: 0.967em;
+      &:before {
+        width: 2.933em;
+        background-size: 1.2em;
       }
-      &__nav-link {
-        position: absolute;
-        top: 3.3em;
-        width: 14.667em;
+    }
+    &__nav--top {
+      border-bottom: 0;
+      .article__nav-link {
+        color: $white;
+        background-color: $sw-black-75;
         &:before {
-          // box and left & right arrow icons
-          left: 0;
-          width: 2.933em;
           background-color: $sw-black-75;
-          background-size: 1.2em;
-          transform: rotate(-90deg);
+          border: 0;
         }
         &--previous {
-          left: 0;
-          transform: rotate(90deg) translateY(-2.888em);
-          transform-origin: top left;
+          padding-left: 2.933em;
+          &:before {
+            background-image: url("../img/icon/arrow-left.png");
+            .svg & { background-image: url("../img/icon/arrow-left.svg"); }
+          }
         }
         &--next {
-          right: 0;
-          padding-right: 0;
-          transform: rotate(90deg) translateX(14.667em);
-          transform-origin: top right;
-          border: 0;
+          padding-right: 2.933em;
+          border-color: $sw-black;
+          &:before {
+            background-image: url("../img/icon/arrow-right.png");
+            .svg & { background-image: url("../img/icon/arrow-right.svg"); }
+          }
+        }
+        &:hover {
+          background-color: $sw-black;
+        }
+      }
+    }
+    .csstransforms.csstransforms3d & {
+       &__nav--top {
+        margin-left: auto;
+        margin-right: auto;
+        .article__nav-link {
+          position: absolute;
+          top: 3.3em;
+          width: 14.667em;
+          &:before {
+            // box and left & right arrow icons
+            left: 0;
+            background-color: $sw-black-75;
+            transform: rotate(-90deg);
+          }
+          &--previous {
+            left: 0;
+            transform: rotate(90deg) translateY(-2.888em);
+            transform-origin: top left;
+          }
+          &--next {
+            right: 0;
+            padding-right: 0;
+            padding-left: 2.933em;
+            transform: rotate(90deg) translateX(14.667em);
+            transform-origin: top right;
+            border: 0;
+          }
         }
       }
     }

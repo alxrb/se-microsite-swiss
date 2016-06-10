@@ -12,7 +12,8 @@
   font-weight: 400;
   color: $sw-red;
   text-align: center;
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
     background-color: $sw-red;
     text-decoration: none;
@@ -21,14 +22,16 @@
     background-color: $sw-red;
     color: white;
     border: 0;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $sw-dark-red;
     }
   }
   &--white {
     background-color: $white;
     border: 0;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $sw-red;
     }
   }

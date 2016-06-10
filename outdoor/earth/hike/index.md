@@ -118,7 +118,7 @@ description:    >
     <p>There’s no better place to be than early in the morning around by Stelli Lake above Zermatt, watching the sunrise.  It’s never the same as it was the last time. It’s my personal happy place.</p>
 
     <div class="row"></div>
-    <div class="row row--columns-6-6 row--columns-vertical-align">
+    <div class="row row--columns-6-6 row--columns-vertical-align row--images">
       <div class="row__column">
         <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/hike-interview-01.jpg);"></div>
       </div>
@@ -140,7 +140,7 @@ description:    >
     <p>Or another good spot in Bern is Restaurant Rosengarten where you can dine with a view over the old town, which is a UNESCO World Heritage Site.</p>
 
     <div class="row"></div>
-    <div class="row row--columns-6-6 row--columns-vertical-align">
+    <div class="row row--columns-6-6 row--columns-vertical-align row--images">
       <div class="row__column">
         <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/hike-interview-03.jpg);"></div>
       </div>

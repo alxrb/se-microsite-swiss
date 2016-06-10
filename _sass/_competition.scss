@@ -17,6 +17,10 @@
     background-color: $white;
     -webkit-overflow-scrolling:touch;
     overflow:auto;
+    background-image: url("../img/icon/loading.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
     @include bp( large ){
       height: 26.667em;
       overflow: visible;

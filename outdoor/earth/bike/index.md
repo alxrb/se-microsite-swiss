@@ -147,15 +147,19 @@ description:    >
     <p>There really are way too many to point out one. Many involve descending from an isolated alpine mountain pass with a close group of friends at the end of a long day out in the mountains.</p>
 
     <div class="row"></div>
-    <div class="row row--columns-6-6 row--columns-vertical-align">
+    <div class="row row--columns-6-6 row--columns-vertical-align row--images">
       <div class="row__column">
         <a href="{{site.baseurl}}/about/#martin-bissig">
-          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-03.jpg);"></div>
+          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-03.jpg);">
+            <div class="photo-credit">Photo by Martin Bissig</div>
+          </div>
         </a>
       </div>
       <div class="row__column">
         <a href="{{site.baseurl}}/about/#martin-bissig">
-          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-02.jpg);"></div>
+          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-02.jpg);">
+            <div class="photo-credit">Photo by Martin Bissig</div>
+          </div>
         </a>
       </div>
     </div>
@@ -169,15 +173,19 @@ description:    >
     <p>The Swiss Postal Bus service allows you to hop on a bus to take you up pretty much any mountain with a village. From there on you just have to find any trail sign that points down the mountain to where you came from.</p>
 
     <div class="row"></div>
-    <div class="row row--columns-6-6 row--columns-vertical-align">
+    <div class="row row--columns-6-6 row--columns-vertical-align row--images">
       <div class="row__column">
         <a href="{{site.baseurl}}/about/#martin-bissig">
-          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-01.jpg);"></div>
+          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-01.jpg);">
+            <div class="photo-credit">Photo by Martin Bissig</div>
+          </div>
         </a>
       </div>
       <div class="row__column">
         <a href="{{site.baseurl}}/about/#martin-bissig">
-          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-04.jpg);"></div>
+          <div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/bike-interview-04.jpg);">
+            <div class="photo-credit">Photo by Martin Bissig</div>
+          </div>
         </a>
       </div>
     </div>

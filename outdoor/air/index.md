@@ -19,7 +19,8 @@ Sometimes you need to go to new heights to really experience a country. Take to 
 ## Paragliding
 
 <div class="row">
-  <div class="bg-image-ratio bg-image-ratio--21-9" style="background-image: url('{{site.baseurl}}/img/content/paragliding.jpg');"></div>
+  <div class="bg-image-ratio bg-image-ratio--21-9" style="background-image: url('{{site.baseurl}}/img/content/paragliding.jpg');">
+  </div>
 </div>
 <div class="row"></div>
 

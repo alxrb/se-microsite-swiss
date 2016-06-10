@@ -7,8 +7,10 @@
     <div class="section-article section-article--{{ section.class }}" style="background-image: url('{{site.baseurl}}/img/bg/{{section.class}}.jpg');">
       <a class="section-article__link" href="{{ site.baseurl }}{{ section.url }}"></a>
       <div class="section-article__wrap row--padding">
-        <h2 class="section-article__title">{{ section.title }}</h2>
-        <p class="section-article__description">{{ section.description }}<!--  <img class="subtle-btn__icon js-svg-swap" src="{{site.baseurl}}/img/icon/long-arrow-right.png" alt=""> --></p>
+        <a href="{{ site.baseurl }}{{ section.url }}">
+          <h2 class="section-article__title">{{ section.title }}</h2>
+          <p class="section-article__description">{{ section.description }}<!--  <img class="subtle-btn__icon js-svg-swap" src="{{site.baseurl}}/img/icon/long-arrow-right.png" alt=""> --></p>
+        </a>
       </div>
     </div>
     {% endif %}

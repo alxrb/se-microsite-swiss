@@ -30,7 +30,7 @@ $se-dark-grey-85: rgba(41,39,40,.85);
 
 $sw-red:      #be1902;
 $sw-red-33:   rgba(190,25,2,.33);
-$sw-red-6:    rgba(190,25,2,.6);
+$sw-red-75:    rgba(190,25,2,.75);
 $sw-dark-red: #a31402;
 $sw-blue:     #1390bc;
 
@@ -40,11 +40,14 @@ $sw-grey:         #808080;
 $sw-light-grey:   #bfbfbf;
 $sw-lighter-grey: #d9d9d9;
 
-$sw-darker-beige:  #7f7978;
-$sw-dark-beige:    #bab6ae;
-$sw-beige:         #d6d3cc;
-$sw-light-beige:   #edece8;
-$sw-lighter-beige: #f5f4f1;
+$sw-darker-beige:     #7f7978;
+$sw-dark-beige:       #bab6ae;
+$sw-beige:            #d6d3cc;
+$sw-beige-75:         rgba(214,211,204,.75);
+$sw-light-beige:      #edece8;
+$sw-light-beige-85:   rgba(237,236,232,.85);
+$sw-lighter-beige:    #f5f4f1;
+$sw-lighter-beige-85: rgba(245,244,241,.85);
 
 $sw-black:    #333333;
 $sw-black-25: rgba(51,51,51,.25);
@@ -166,17 +169,34 @@ $z-content:         0;
 $z-background:      -1;
 
 
-// -------- background image ratios --------
+// -------- background image ratios - with photo credit optional --------
 
 .bg-image-ratio {
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
   &:before {
     display: block;
     content: "";
     width: 100%;
+  }
+  .photo-credit {
+    position: absolute;
+    bottom: -3em;
+    right: 0;
+    padding: 0.5em 1.5em;
+    color: $white;
+    font-size: .85em;
+    background-color: $black-5;
+    @include transition;
+    &:hover {
+      background-color: $black-85;
+    }
+  }
+  &:hover .photo-credit {
+    bottom: 0;
   }
 }
 .bg-image-ratio--2-3:before   { padding-top: 150%; }

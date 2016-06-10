@@ -113,6 +113,10 @@
           opacity: 1;
         }
       }
+      & .overview-nav__link {
+        text-decoration: none;
+        background-color: $sw-red-75;
+      }
     }
   }
   &__link {
@@ -132,10 +136,6 @@
     @include transition;
     @include bp( large ){
       font-size: 3.5em;
-    }
-    &:hover {
-      text-decoration: none;
-      background-color: $sw-red-6;
     }
   }
   &__wrap {

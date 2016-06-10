@@ -114,7 +114,9 @@ h5, .h5 { font-size: 1.2em; }
   font-weight: 300;
   p             { text-align: justify }
   p + *         { margin-top: .75em; }
-  li            { list-style-position: inside; }
+  li            { list-style-position: outside;
+                  margin-left: 1.25em;
+                  list-style-type: disc; }
   ol li         { list-style-type: decimal; }
   em            { font-style: italic; }
   strong        { font-weight: 600; }
@@ -126,11 +128,6 @@ h5, .h5 { font-size: 1.2em; }
   h3, .h3,
   h4, .h4,
   h5, .h5       { color: $sw-red; }
-  ul li:before {
-    content: '–';
-    display: inline-block;
-    margin-right: .5em;
-  }
   .lead-paragraph {
     font-size: 1.2em;
     line-height: 1.66
