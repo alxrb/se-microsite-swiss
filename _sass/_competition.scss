@@ -37,19 +37,19 @@
 }
 
 .competition-intro {
+  position: relative;
   padding-top: 3.333em;
   padding-bottom: 0;
   color: $white;
   text-align: center;
-  background-image: url("../img/bg/competition.jpg");
-  background-size: cover;
-  background-position: 50% 25%;
-  background-color: $sw-black;
+  overflow: hidden;
   @include border-bottom;
   &__wrap {
     padding-top: 10em;
     padding-bottom: 10em;
     text-align: center;
+    text-shadow: 0px 5px 30px #083457;
+    z-index: $z-content-upper;
   }
   &__title {
     font-size: 2.488em;
@@ -101,5 +101,46 @@
     &__logo + &__logo {
       padding-top: 0;
     }
+  }
+}
+
+.background-video {
+  display: none;
+  @include bp( large ){
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-background;
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    .csstransforms.csstransforms3d & {
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  &__fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background-lower;
+    background: url("../img/bg/competition.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-color: $sw-black;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    background-color: rgba(8,52,87,.15);
   }
 }

@@ -162,11 +162,12 @@ $transition-time: .25s;
 
 // -------- z-index values --------
 
-$z-overlay-upper:   20;
-$z-overlay:         10;
-$z-content-upper:   5;
-$z-content:         0;
-$z-background:      -1;
+$z-overlay-upper:     20;
+$z-overlay:           10;
+$z-content-upper:     5;
+$z-content:           0;
+$z-background:        -1;
+$z-background-lower:  -2;
 
 
 // -------- background image ratios - with photo credit optional --------
