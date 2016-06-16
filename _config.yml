@@ -9,6 +9,7 @@ url: "https://www.secretescapes.com" # the base hostname & protocol for your sit
 # Build settings
 markdown: kramdown
 exclude: [node_modules, gulpfile.js, package.json, bower_components, bower.json, README.md]
+keep_files: [three-sixty]
 
 
 ####################   offers   ####################

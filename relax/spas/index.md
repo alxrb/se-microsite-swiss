@@ -13,12 +13,21 @@ description:    >
                 After your adventures, you deserve a break. Go on, take a load off with a luxury spa day.
 ---
 
+<div class="row three-sixty bleed-width">
+  <a href="{{site.baseurl}}/three-sixty/SpaRigi-Kaltbad" class="three-sixty__link"></a>
+  <h3 class="three-sixty__title">
+    <span class="three-sixty__title-small">See the wonders of</span>
+    Spa Rigi Kaltbad
+  </h3>
+  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/spa-rigi-kaltbad.jpg');"></div>
+</div>
 
-After your adventures, you deserve a break. Go on, take a load off with a luxury spa day.
-
-There’s something about the fresh Alpine air that revives and restores even the weariest of intrepid explorers. It’s not just the luxury spas and saunas that draw in the crowds, the whole of Switzerland feels like a natural spa.
-
-For thousands of years Switzerland has understood and celebrated the idea of ‘wellness’. It’s not a fad here, it’s a way of life. The Alpine air and thermal and mineral spas are very much front of mind and there’s something about the attitude that is a little bit addictive.
+<div class="row">
+  <p class="lead-paragraph">After your adventures, you deserve a break. Go on, take a load off with a luxury spa day.</p>
+  <p>There’s something about the fresh Alpine air that revives and restores even the weariest of intrepid explorers. It’s not just the luxury spas and saunas that draw in the crowds, the whole of Switzerland feels like a natural spa.</p>
+  <p>For thousands of years Switzerland has understood and celebrated the idea of ‘wellness’. It’s not a fad here, it’s a way of life. The Alpine air and thermal and mineral spas are very much front of mind and there’s something about the attitude that is a little bit addictive.</p>
+</div>
 
 <div class="row"></div>
 <div class="row"><div class="bg-image-ratio bg-image-ratio--21-9" style="background-image: url('{{site.baseurl}}/img/content/spa-04.jpg');"></div></div>

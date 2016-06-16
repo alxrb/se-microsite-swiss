@@ -44,7 +44,7 @@ gulp.task('concatScripts', function(){
 
 // minify complied html
 gulp.task('htmlMinify', function() {
-  return gulp.src('./_site/**/*.html')
+  return gulp.src(['./_site/**/*.html', '!./_site/three-sixty/**/*'])
   .pipe(htmlmin({
     collapseWhitespace: true,
     removeComments: true
@@ -54,7 +54,7 @@ gulp.task('htmlMinify', function() {
 
 // css autoprefix & min
 gulp.task('optimiseCss', function() {
-  return gulp.src('./_site/**/*.css')
+  return gulp.src(['./_site/**/*.css', '!./_site/three-sixty/**/*'])
   .pipe(autoprefix({
     browsers: ['last 3 versions'],
     cascade: false

@@ -13,8 +13,17 @@ description:    >
                 There are 1,484 lakes in Switzerland and thousands more smaller bodies of water so you’ll be spoilt for choice when it comes to getting your feet wet.
 ---
 
+<div class="row three-sixty bleed-width">
+  <a href="{{site.baseurl}}/three-sixty/StBeatusCaves" class="three-sixty__link"></a>
+  <h3 class="three-sixty__title">
+    <span class="three-sixty__title-small">See the wonders of</span>
+    St Beatus Caves
+  </h3>
+  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/st-beatus-caves.jpg');"></div>
+</div>
 
-<p class="row">You could go for a dip in a gorgeous lake or you could take a leisurely boat trip. There are 1,484 lakes in Switzerland and thousands more smaller bodies of water so you’ll be spoilt for choice when it comes to getting your feet wet. Switzerland might be landlocked, but we see that as more of a technicality.</p>
+<p class="row lead-paragraph">You could go for a dip in a gorgeous lake or you could take a leisurely boat trip. There are 1,484 lakes in Switzerland and thousands more smaller bodies of water so you’ll be spoilt for choice when it comes to getting your feet wet. Switzerland might be landlocked, but we see that as more of a technicality.</p>
 
 <div class="row row--columns-5-7-gutters row--columns-vertical-align">
   <div class="row__column">

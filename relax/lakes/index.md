@@ -12,11 +12,20 @@ description:    >
                 Find an inland beach to play on, go for a dip, or take a hike all the way around, whatever you fancy, the lakes are yours for the taking.
 ---
 
+<div class="row three-sixty bleed-width">
+  <a href="{{site.baseurl}}/three-sixty/LakeLucerne" class="three-sixty__link"></a>
+  <h3 class="three-sixty__title">
+    <span class="three-sixty__title-small">See the wonders of</span>
+    Lake Lucerne
+  </h3>
+  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake-lucerne.jpg');"></div>
+</div>
 
-<p>Find an inland beach to play on, go for a dip, or take a hike all the way around, whatever you fancy, the lakes are yours for the taking.</p>
-
-<p>You could spend a lifetime trying to visit all of Switzerland’s lakes (and you’d have a fabulous time in doing so), but here are the water spots that will give you everything you’re looking for:</p>
-
+<div class="row">
+  <p class="lead-paragraph">Find an inland beach to play on, go for a dip, or take a hike all the way around, whatever you fancy, the lakes are yours for the taking.</p>
+  <p>You could spend a lifetime trying to visit all of Switzerland’s lakes (and you’d have a fabulous time in doing so), but here are the water spots that will give you everything you’re looking for:</p>
+</div>
 
 <div class="row"></div>
 <h3 class="row">Lake Geneva</h3>
