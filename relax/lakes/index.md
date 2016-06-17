@@ -13,7 +13,7 @@ description:    >
 ---
 
 <div class="row three-sixty bleed-width">
-  <a href="{{site.baseurl}}/three-sixty/LakeLucerne" class="three-sixty__link"></a>
+  <a id="three-sixty-lake-lucerne" href="{{site.baseurl}}/three-sixty/LakeLucerne" class="three-sixty__link"></a>
   <h3 class="three-sixty__title">
     <span class="three-sixty__title-small">See the wonders of</span>
     Lake Lucerne
