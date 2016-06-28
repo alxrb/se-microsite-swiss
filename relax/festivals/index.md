@@ -34,7 +34,7 @@ description:    >
 
 <p>If the city of Zurich has caught your eye, make sure you’re there for the Summer Festival which runs for a month from 26 June. Every year the city turns into a fabulous cultural hub for art, music, dance and theatre.</p>
 
-<p>This year there’s even more reason to head to Zurich this summer as the Zurich Festival is going to be taking place at the same time. The festival only happens once every three years and it brings 2 million people to the city each day. Head to the capital over 1 - 3 July for fireworks, fairgrounds and far too much fun.</p>
+<p>This year there’s even more reason to head to Zurich this summer as the Zurich Festival is going to be taking place at the same time. The festival only happens once every three years and it brings 2 million people to the city each day. Head to the city over 1 - 3 July for fireworks, fairgrounds and far too much fun.</p>
 
 <p>1 August is National Swiss Day so expect fireworks and boat trips out onto lakes. Wherever you are in Switzerland on this day, it’s a day for celebration.</p>
 
