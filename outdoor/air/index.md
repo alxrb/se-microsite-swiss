@@ -19,7 +19,7 @@ description:    >
     <span class="three-sixty__title-small">Up In The Air Over</span>
     Lake Lucerne
   </h3>
-  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <img class="js-svg-swap three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
   <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/air.jpg');"></div>
 </div>
 

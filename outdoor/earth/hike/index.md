@@ -13,14 +13,33 @@ description:    >
                 You might want a week-long trek up Mount Eiger, one of the most challenging mountains in the world. Or maybe you just fancy a lovely stroll around St Moritz Lake with the family.
 ---
 
-<div class="row three-sixty bleed-width">
-  <a id="three-sixty-hike" href="{{site.baseurl}}/three-sixty/hike" class="three-sixty__link"></a>
-  <h3 class="three-sixty__title">
-    <span class="three-sixty__title-small">See The Sights At</span>
-    Lauterbrunnen
-  </h3>
-  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
-  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/hike.jpg');"></div>
+<div class="row js-three-sixty-content">
+
+  <div class="row three-sixty-video bleed-width js-three-sixty-video">
+    <a id="#three-sixty-lake-hike" class="three-sixty-video__link js-three-sixty-video-link" href="https://www.youtube.com/watch?v=Vqmwnm6ZQ34" ></a>
+    <div class="three-sixty-video__thumbnail js-three-sixty-thumbnail">
+      <h3 class="three-sixty-video__title">
+        <span class="three-sixty-video__title-small">See The Sights At</span>
+        Lauterbrunnen
+      </h3>
+      <img class="js-svg-swap three-sixty-video__icon" src="{{site.baseurl}}/img/icon/three-sixty-video.png" alt="360 image icon">
+      <div class="three-sixty-video__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/hike.jpg');"></div>
+    </div>
+    <div class="three-sixty-video__iframe-wrap">
+      <iframe class="three-sixty-video__iframe" src='https://www.youtube.com/embed/Vqmwnm6ZQ34?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
+    </div>
+  </div>
+
+  <div class="row three-sixty bleed-width js-three-sixty-image">
+    <a id="three-sixty-hike" href="{{site.baseurl}}/three-sixty/hike" class="three-sixty__link"></a>
+    <h3 class="three-sixty__title">
+      <span class="three-sixty__title-small">See The Sights At</span>
+      Lauterbrunnen
+    </h3>
+    <img class="js-svg-swap three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+    <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/hike.jpg');"></div>
+  </div>
+
 </div>
 
 <p class="row lead-paragraph">Hiking may sound like hard work but it can mean whatever you want it to. You might want a week-long trek up Mount Eiger, one of the most challenging mountains in the world. Or maybe you just fancy a lovely stroll around St Moritz Lake with the family.</p>

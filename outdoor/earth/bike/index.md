@@ -14,15 +14,35 @@ description:    >
 ---
 
 
-<div class="row three-sixty bleed-width">
-  <a id="three-sixty-bike" href="{{site.baseurl}}/three-sixty/bike" class="three-sixty__link"></a>
-  <h3 class="three-sixty__title">
-    <span class="three-sixty__title-small">Ride The Trail At</span>
-    Grindelwald
-  </h3>
-  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
-  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/bike.jpg');"></div>
+<div class="row js-three-sixty-content">
+
+  <div class="row three-sixty-video bleed-width js-three-sixty-video">
+    <a id="#three-sixty-lake-bike" class="three-sixty-video__link js-three-sixty-video-link" href="https://www.youtube.com/watch?v=4mkNHruIDfQ" ></a>
+    <div class="three-sixty-video__thumbnail js-three-sixty-thumbnail">
+      <h3 class="three-sixty-video__title">
+        <span class="three-sixty-video__title-small">Ride The Trail At</span>
+        Grindelwald
+      </h3>
+      <img class="js-svg-swap three-sixty-video__icon" src="{{site.baseurl}}/img/icon/three-sixty-video.png" alt="360 image icon">
+      <div class="three-sixty-video__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/bike.jpg');"></div>
+    </div>
+    <div class="three-sixty-video__iframe-wrap">
+      <iframe class="three-sixty-video__iframe" src='https://www.youtube.com/embed/4mkNHruIDfQ?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
+    </div>
+  </div>
+
+  <div class="row three-sixty bleed-width js-three-sixty-image">
+    <a id="three-sixty-bike" href="{{site.baseurl}}/three-sixty/bike" class="three-sixty__link"></a>
+    <h3 class="three-sixty__title">
+      <span class="three-sixty__title-small">Ride The Trail At</span>
+      Grindelwald
+    </h3>
+    <img class="js-svg-swap three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+    <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/bike.jpg');"></div>
+  </div>
+
 </div>
+
 
 <div class="row">
   <p class="lead-paragraph">Switzerland is a fantastic location for biking whatever your skill level. If you want to go hell for leather down some of the steepest peaks in the world, you won’t be short of options to brace yourself against but you’ll find loads to discover on two wheels if you just fancy a leisurely journey around the lakes, then you can take your pick.</p>

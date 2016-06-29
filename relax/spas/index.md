@@ -19,7 +19,7 @@ description:    >
     <span class="three-sixty__title-small">See the wonders of</span>
     Spa Rigi Kaltbad
   </h3>
-  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <img class="js-svg-swap three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
   <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/spa-rigi-kaltbad.jpg');"></div>
 </div>
 
