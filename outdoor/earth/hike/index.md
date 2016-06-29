@@ -13,6 +13,15 @@ description:    >
                 You might want a week-long trek up Mount Eiger, one of the most challenging mountains in the world. Or maybe you just fancy a lovely stroll around St Moritz Lake with the family.
 ---
 
+<div class="row three-sixty bleed-width">
+  <a id="three-sixty-hike" href="{{site.baseurl}}/three-sixty/hike" class="three-sixty__link"></a>
+  <h3 class="three-sixty__title">
+    <span class="three-sixty__title-small">See The Sights At</span>
+    Lauterbrunnen
+  </h3>
+  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/hike.jpg');"></div>
+</div>
 
 <p class="row lead-paragraph">Hiking may sound like hard work but it can mean whatever you want it to. You might want a week-long trek up Mount Eiger, one of the most challenging mountains in the world. Or maybe you just fancy a lovely stroll around St Moritz Lake with the family.</p>
 

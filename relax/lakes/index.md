@@ -13,13 +13,13 @@ description:    >
 ---
 
 <div class="row three-sixty bleed-width">
-  <a id="three-sixty-lake-lucerne" href="{{site.baseurl}}/three-sixty/LakeLucerne" class="three-sixty__link"></a>
+  <a id="three-sixty-lake" href="{{site.baseurl}}/three-sixty/lake" class="three-sixty__link"></a>
   <h3 class="three-sixty__title">
     <span class="three-sixty__title-small">See the wonders of</span>
-    Lake Lucerne
+    Weggis, Lucerne
   </h3>
   <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
-  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake-lucerne.jpg');"></div>
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake.jpg');"></div>
 </div>
 
 <div class="row">

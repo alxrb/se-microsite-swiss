@@ -14,6 +14,16 @@ description:    >
 ---
 
 
+<div class="row three-sixty bleed-width">
+  <a id="three-sixty-bike" href="{{site.baseurl}}/three-sixty/bike" class="three-sixty__link"></a>
+  <h3 class="three-sixty__title">
+    <span class="three-sixty__title-small">Ride The Trail At</span>
+    Grindelwald
+  </h3>
+  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/bike.jpg');"></div>
+</div>
+
 <div class="row">
   <p class="lead-paragraph">Switzerland is a fantastic location for biking whatever your skill level. If you want to go hell for leather down some of the steepest peaks in the world, you won’t be short of options to brace yourself against but you’ll find loads to discover on two wheels if you just fancy a leisurely journey around the lakes, then you can take your pick.</p>
 </div>

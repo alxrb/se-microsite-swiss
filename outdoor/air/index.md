@@ -13,8 +13,19 @@ description:    >
                 Sometimes you need to go to new heights to really experience a country. Take to the skies and see Switzerland from a completely different view.
 ---
 
+<div class="row three-sixty bleed-width">
+  <a id="three-sixty-air" href="{{site.baseurl}}/three-sixty/air" class="three-sixty__link"></a>
+  <h3 class="three-sixty__title">
+    <span class="three-sixty__title-small">Up In The Air Over</span>
+    Lake Lucerne
+  </h3>
+  <img class="three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/air.jpg');"></div>
+</div>
 
-Sometimes you need to go to new heights to really experience a country. Take to the skies in a helicopter, hot air balloon or attached to a parachute and see Switzerland from a completely different view.
+<div class="row">
+  <p class="lead-paragraph">Sometimes you need to go to new heights to really experience a country. Take to the skies in a helicopter, hot air balloon or attached to a parachute and see Switzerland from a completely different view.</p>
+</div>
 
 ## Paragliding
 
