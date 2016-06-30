@@ -299,69 +299,114 @@
   }
 }
 
-.three-sixty-video {
+.three-sixty-content {
   color: $white;
   text-align: center;
   background-color: $sw-black;
-  background-size: 100%;
+  background-size: cover;
   overflow: hidden;
   @include border-bottom;
   @include bp( large ){
     position: relative;
   }
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $z-overlay;
-    display: block;
+  &__thumbnail {
+    z-index: $z-content-upper;
+    height: 100%;
+    width: 100%;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    @include bp( large ){
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+    }
+  }
+  &__title-wrap {
+    vertical-align: middle;
+    @include bp( large ){
+      position: absolute;
+      z-index: $z-content-upper;
+      top: 40%;
+      left: 0;
+      right: 0;
+      .csstransforms.csstransforms3d & {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
   &__icon {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 1.467em;
-    height: 4.133em;
-    width: 12em;
-    margin-right: auto;
-    margin-left: auto;
+    position: relative;
     z-index: $z-content-upper;
-    @include transition;
+    margin: 1em;
+    height: 4.467em;
+    width: 4.467em;
+    @include bp( large ){
+      display: inline-block;
+      vertical-align: middle;
+    }
     @include bp( xlarge ){
-      height: 4.467em;
-      width: 13.067em;
+      height: 5.063em;
+      width: 5.063em;
     }
   }
   &__title {
     position: relative;
     z-index: $z-content-upper;
+    margin-bottom: 0;
     font-family: $title-font-family;
     color: $white !important;
-    font-size: 2.2em;
+    font-size: 2.986em;
     letter-spacing: .2em;
     line-height: 1.2;
     @include bp( large ){
-      position: absolute;
-      top: 40%;
-      left: 0;
-      right: 0;
-      font-size: 2.488em;
-      .csstransforms.csstransforms3d & {
-        top: 50%;
-        transform: translateY(-50%);
-      }
+      text-align: left;
+      display: inline-block;
+      vertical-align: middle;
     }@include bp( xlarge ){
       font-size: 3.33em;
     }
   }
-  &__title-small {
+  &__subtitle {
     display: block;
     font-size: .36em;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .2em;
+  }
+  &__links {
+    z-index: $z-content-upper;
+    @include bp( large ){
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1.467em;
+      text-align: center;
+      > a.btn {
+        width: 48%;
+        margin-left: .75%;
+        margin-right: .75%;
+      }
+    }
+  }
+   &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $sw-black;
+    @include transition;
   }
   &__iframe-wrap {
     position: relative;
@@ -379,44 +424,10 @@
     width: 100%;
     height: 100%;
   }
-  &__thumbnail {
-    z-index: $z-content-upper;
-    height: 100%;
-    width: 100%;
-    padding-top: 10em;
-    padding-bottom: 10em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
-    @include bp( large ){
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 0;
-    }
-  }
-   &__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $z-content;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $sw-black;
-    @include transition;
-  }
-  &.is-playing .three-sixty-video__iframe-wrap {
+  &.is-playing &__iframe-wrap {
     padding-bottom: 56.25%;
   }
   &:hover &__bg {
     transform: scale(1.1,1.1);
-  }
-  &:hover &__icon {
-    bottom: 2.2em;
   }
 }

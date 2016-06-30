@@ -13,33 +13,26 @@ description:    >
 ---
 
 
-<div class="row js-three-sixty-content">
-
-  <div class="row three-sixty-video bleed-width js-three-sixty-video">
-    <a id="#three-sixty-lake-video" class="three-sixty-video__link js-three-sixty-video-link" href="https://www.youtube.com/watch?v=OxZEYPGZ7-Y" ></a>
-    <div class="three-sixty-video__thumbnail js-three-sixty-thumbnail">
-      <h3 class="three-sixty-video__title">
-        <span class="three-sixty-video__title-small">See the wonders of</span>
-        Weggis, Lucerne
-      </h3>
-      <img class="js-svg-swap three-sixty-video__icon" src="{{site.baseurl}}/img/icon/three-sixty-video.png" alt="360 image icon">
-      <div class="three-sixty-video__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake.jpg');"></div>
+<div class="three-sixty-content row bleed-width js-three-sixty-content">
+  <div class="three-sixty-content__thumbnail js-three-sixty-thumbnail">
+    <div class="three-sixty-content__thumbnail-content">
+      <div class="three-sixty-content__title-wrap row">
+        <img class="js-svg-swap three-sixty-content__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+        <h3 class="three-sixty-content__title">
+          <span class="three-sixty-content__subtitle">See the wonders of</span>
+            Weggis, Lucerne
+        </h3>
+      </div>
+      <div class="three-sixty-content__links row row--padding">
+        <a id="three-sixty-image-lake" class="js-three-sixty-image row__column btn btn--red-trans" href="{{site.baseurl}}/three-sixty/lake">See 360 Image</a>
+        <a id="three-sixty-video-lake" class="js-three-sixty-video row__column btn btn--red-trans" href="https://www.youtube.com/watch?v=OxZEYPGZ7-Y">Play 360 Video</a>
+      </div>
     </div>
-    <div class="three-sixty-video__iframe-wrap">
-      <iframe class="three-sixty-video__iframe" src='https://www.youtube.com/embed/OxZEYPGZ7-Y?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
-    </div>
+    <div class="three-sixty-content__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake.jpg');"></div>
   </div>
-
-  <div class="row three-sixty bleed-width js-three-sixty-image">
-    <a id="three-sixty-lake" href="{{site.baseurl}}/three-sixty/lake" class="three-sixty__link"></a>
-    <h3 class="three-sixty__title">
-      <span class="three-sixty__title-small">See the wonders of</span>
-      Weggis, Lucerne
-    </h3>
-    <img class="js-svg-swap three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
-    <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake.jpg');"></div>
+  <div class="three-sixty-content__iframe-wrap js-three-sixty-iframe-wrap">
+    <iframe class="three-sixty-content__iframe js-three-sixty-iframe" src='https://www.youtube.com/embed/OxZEYPGZ7-Y?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
   </div>
-
 </div>
 
 <div class="row">

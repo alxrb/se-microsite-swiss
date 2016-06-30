@@ -93,13 +93,13 @@
   if ( !("ontouchstart" in document.documentElement) ) {
 
     // Loops through all videos on page
-    $('.js-three-sixty-video').each(function(index, el) {
+    $('.js-three-sixty-content').each(function(index, el) {
       var videoBlock        = $(this),
-          video             = $(this).find('.three-sixty-video__iframe'),
-          videoWrap         = $(this).find('.three-sixty-video__iframe-wrap'),
+          video             = $(this).find('.js-three-sixty-iframe'),
+          videoWrap         = $(this).find('.js-three-sixty-iframe-wrap'),
           videoSrc          = video.attr('src'),
           thumbnail         = $(this).find('.js-three-sixty-thumbnail'),
-          playButton        = $(this).find('.js-three-sixty-video-link'),
+          playButton        = $(this).find('.js-three-sixty-video'),
           playingClass      = 'is-playing';
 
     // hide video, but keep aspect ratio
@@ -117,7 +117,6 @@
           videoWrap.css('visibility', 'visible');
           videoBlock.addClass(playingClass);
           thumbnail.remove();
-          playButton.remove();
         })
       });
     });
@@ -131,6 +130,7 @@
 // pretty much ie11+, but not win7 ie11 and Safari
 // Modernizer.intl (Internationalization API) seemed to have roughly the same
 // browser support as youtube 360 video
+// broken content is removed from devices that we can detect 360 video doesn't work on
 
   var threeSixtyContent   = $('.js-three-sixty-content'),
       threeSixtyVideo     = threeSixtyContent.find('.js-three-sixty-video'),
@@ -138,21 +138,11 @@
 
   // checks if content is on page
   if ( threeSixtyContent.length > 0 ){
-    // checks if its touch device & checks if it can run 360 video
-    if ( !("ontouchstart" in document.documentElement) && Modernizr.intl ) {
-      // if desktop and supported shows video
-      threeSixtyImage.remove();
-    } else if ("ontouchstart" in document.documentElement) {
-      // if mobile shows video
-      threeSixtyImage.remove();
-    }else {
-      // shows image
+    // if desktop & cant run 360 removes 360 link
+    if ( !("ontouchstart" in document.documentElement) && !(Modernizr.intl) ) {
       threeSixtyVideo.remove();
     };
   };
-
-
-
 
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -27,6 +27,15 @@
       background-color: $sw-dark-red;
     }
   }
+  &--red-trans {
+    background-color: $sw-red-75;
+    color: white;
+    border: 0;
+    &:hover,
+    &:focus {
+      background-color: $sw-red;
+    }
+  }
   &--white {
     background-color: $white;
     border: 0;
