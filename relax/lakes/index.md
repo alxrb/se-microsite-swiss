@@ -16,7 +16,7 @@ description:    >
 <div class="three-sixty-content row bleed-width js-three-sixty-content">
   <div class="three-sixty-content__thumbnail js-three-sixty-thumbnail">
     <div class="three-sixty-content__thumbnail-content">
-      <div class="three-sixty-content__title-wrap row">
+      <div class="three-sixty-content__title-wrap row row--padding">
         <img class="js-svg-swap three-sixty-content__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
         <h3 class="three-sixty-content__title">
           <span class="three-sixty-content__subtitle">See the wonders of</span>

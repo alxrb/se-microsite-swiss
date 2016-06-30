@@ -330,6 +330,10 @@
   }
   &__title-wrap {
     vertical-align: middle;
+    word-break: break-word;
+    @include bp( medium ){
+      word-break: initial;
+    }
     @include bp( large ){
       position: absolute;
       z-index: $z-content-upper;
