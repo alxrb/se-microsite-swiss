@@ -24,8 +24,8 @@ Switzerland is so easy to reach by air that you’ll find yourself planning your
   </div>
   <div class="row__column">
     <p>The busiest airports are in Zurich and Geneva, where all of the action is. SWISS offer 170 weekly flights and they aim to make your journey as enjoyable as the rest of your trip.</p>
-    <p>SWISS are so excited to welcome Secret Escapes members to Switzerland that they’re offering £25 off SWISS flights. Make sure you’re of the first 1000 members to book your flight and use code <strong>SWISSESCAPE16</strong> on <a href="http://secretescap.es/1VlQiGe">SWISS.COM</a> to make your saving and start your SWISS adventure.</p>
-    <a href="http://secretescap.es/1VlQiGe" class="btn">Book Now</a>
+    <p>SWISS are so excited to welcome Secret Escapes members to Switzerland that they’re offering £25 off SWISS flights. Make sure you’re of the first 1000 members to book your flight and use code <strong>SWISSESCAPE16</strong> on <a href="http://secretescap.es/299Z2O2">SWISS.COM</a> to make your saving and start your SWISS adventure.</p>
+    <a href="http://secretescap.es/299Z2O2" class="btn">Book Now</a>
   </div>
 </div>
 
