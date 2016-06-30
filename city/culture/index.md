@@ -13,6 +13,16 @@ description:    >
                 As you might imagine for a city that has international affairs at its heart, the culture has a global appeal.
 ---
 
+<div class="row three-sixty bleed-width">
+  <a id="three-sixty-zurich-day" href="{{site.baseurl}}/three-sixty/zurich-day" class="three-sixty__link"></a>
+  <h3 class="three-sixty__title">
+    <span class="three-sixty__title-small">See The Wonders Of</span>
+    Zurich in the Day
+  </h3>
+  <img class="js-svg-swap three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
+  <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/zurich-day.jpg');"></div>
+</div>
+
 <div class="row">
   <h2 class="line-title"><span>Zurich</span></h2>
   <div class="row">

@@ -24,7 +24,7 @@ description:    >
   <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/balcony.jpg');"></div>
 </div>
 
-<div class="row section--padding-top">
+<div class="row">
   <h2 class="line-title"><span>Zurich</span></h2>
 
   <div class="row">
