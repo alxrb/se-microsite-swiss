@@ -16,7 +16,7 @@ description:    >
 <div class="row js-three-sixty-content">
 
   <div class="row three-sixty-video bleed-width js-three-sixty-video">
-    <a id="#three-sixty-lake-video" class="three-sixty-video__link js-three-sixty-video-link" href="https://www.youtube.com/watch?v=xnj-ydDVA-Y" ></a>
+    <a id="#three-sixty-lake-video" class="three-sixty-video__link js-three-sixty-video-link" href="https://www.youtube.com/watch?v=OxZEYPGZ7-Y" ></a>
     <div class="three-sixty-video__thumbnail js-three-sixty-thumbnail">
       <h3 class="three-sixty-video__title">
         <span class="three-sixty-video__title-small">See the wonders of</span>
@@ -26,7 +26,7 @@ description:    >
       <div class="three-sixty-video__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake.jpg');"></div>
     </div>
     <div class="three-sixty-video__iframe-wrap">
-      <iframe class="three-sixty-video__iframe" src='https://www.youtube.com/embed/xnj-ydDVA-Y?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
+      <iframe class="three-sixty-video__iframe" src='https://www.youtube.com/embed/OxZEYPGZ7-Y?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
     </div>
   </div>
 
@@ -59,16 +59,6 @@ description:    >
 <h3 class="row">Seebergsee</h3>
 <div class="row bg-image-ratio bg-image-ratio--21-9" style="background-image: url('{{site.baseurl}}/img/content/seebergsee.jpg');"></div>
 <p class="row">Seebergsee is the kind of lake you imagine when you think of Switzerland. It’s in the middle of a nature reserve and it’s one of those places in the world that doesn’t quite seem real. The hiking trails are all pretty easy so there’s only one thing for it: when you come here you’re going to have to do a whole lot of relaxing and soak it all in.</p>
-
-<div class="row three-sixty bleed-width js-three-sixty-image">
-    <a id="three-sixty-lake" href="{{site.baseurl}}/three-sixty/lake" class="three-sixty__link"></a>
-    <h3 class="three-sixty__title">
-      <span class="three-sixty__title-small">See the wonders of</span>
-      Weggis, Lucerne
-    </h3>
-    <img class="js-svg-swap three-sixty__icon" src="{{site.baseurl}}/img/icon/three-sixty.png" alt="360 image icon">
-    <div class="three-sixty__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/lake.jpg');"></div>
-  </div>
 
 <h3 class="row">Take a dip</h3>
 <div class="row bg-image-ratio bg-image-ratio--21-9" style="background-image: url('{{site.baseurl}}/img/content/take-a-dip.jpg');"></div>

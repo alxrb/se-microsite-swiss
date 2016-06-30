@@ -16,7 +16,7 @@ description:    >
 <div class="row js-three-sixty-content">
 
   <div class="row three-sixty-video bleed-width js-three-sixty-video">
-    <a id="#three-sixty-lake-hike" class="three-sixty-video__link js-three-sixty-video-link" href="https://www.youtube.com/watch?v=Vqmwnm6ZQ34" ></a>
+    <a id="#three-sixty-lake-hike" class="three-sixty-video__link js-three-sixty-video-link" href="https://www.youtube.com/watch?v=6i73opdmzXw" ></a>
     <div class="three-sixty-video__thumbnail js-three-sixty-thumbnail">
       <h3 class="three-sixty-video__title">
         <span class="three-sixty-video__title-small">See The Sights At</span>
@@ -26,7 +26,7 @@ description:    >
       <div class="three-sixty-video__bg" style="background-image: url('{{site.baseurl}}/img/three-sixty/hike.jpg');"></div>
     </div>
     <div class="three-sixty-video__iframe-wrap">
-      <iframe class="three-sixty-video__iframe" src='https://www.youtube.com/embed/Vqmwnm6ZQ34?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
+      <iframe class="three-sixty-video__iframe" src='https://www.youtube.com/embed/6i73opdmzXw?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
     </div>
   </div>
 
