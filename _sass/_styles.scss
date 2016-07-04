@@ -20,7 +20,7 @@
   }
   &--red {
     background-color: $sw-red;
-    color: white;
+    color: $white !important;
     border: 0;
     &:hover,
     &:focus {
@@ -29,7 +29,7 @@
   }
   &--red-trans {
     background-color: $sw-red-75;
-    color: white;
+    color: $white !important;
     border: 0;
     &:hover,
     &:focus {
