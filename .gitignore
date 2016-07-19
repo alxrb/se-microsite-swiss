@@ -3,3 +3,5 @@ _site
 node_modules
 bower_components
 js/scripts.min.js
+*.mp4
+*.webm
