@@ -1,6 +1,6 @@
 <div class="row row--padding row--columns-7-5-gutters row--columns-vertical-align offer bg-color row--column-padding">
   <div class="row__column offer__image">
-    <a href="{{ offer.url }}">
+    <a href="{{ offer.offerlink }}">
       <div class="img-block">
         <div class="img-block__major bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}.jpg');"></div>
         <div class="img-block__minor">
@@ -11,11 +11,11 @@
     </a>
   </div>
   <div class="row__column offer__details">
-    <h2 class="offer__title"><a href="{{ offer.url }}">{{ offer.title }}</a></h2>
+    <h2 class="offer__title"><a href="{{ offer.offerlink }}">{{ offer.title }}</a></h2>
     <h3 class="h4 offer__subtitle">{{ offer.location }}</h3>
     <p>{{ offer.long-description }}</p>
     <ul>{{ offer.description-bullets }}</ul>
     <p><span class="offer__price">£{{ offer.price }}</span> <span class="offer__was-price">£{{ offer.was-price }}</span> {{ offer.price-description }}</p>
-    <a href="{{ offer.url }}" class="btn">View Offer</a>
+    <a href="{{ offer.offerlink }}" class="btn">View Offer</a>
   </div>
 </div>

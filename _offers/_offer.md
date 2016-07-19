@@ -7,7 +7,7 @@ description: #
 price: #
 was-price: #
 price-description: #
-url: #
+offerlink: #
 long-description: >
                   #
 description-bullets:  >
