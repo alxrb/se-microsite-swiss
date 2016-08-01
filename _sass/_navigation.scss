@@ -234,7 +234,7 @@ $icon-height: 20px;
   }
   > .section-nav { display: none }
   @include bp( xlarge ){
-    width: 16.666666667%;
+    width: 20%;
     > .section-nav {
       display: none;
       text-transform: uppercase;

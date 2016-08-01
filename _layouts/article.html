@@ -15,13 +15,7 @@ layout: default
         <h1 class="article__title">{{page.title}}</h1>
         <!-- <h2 class="article__author">By FirstName Surname</h2> -->
       </div>
-      <!-- if there is no content loads in sample content -->
-      <!-- TO BE REMOVED WHEN LIVE -->
-      {% if content == '' %}
-        {% include sample-content.html %}
-      {% else %}
-        {{ content }}
-      {% endif %}
+      {{ content }}
     </div>
     <div class="article__nav article__nav--bottom">
       <a class="article__nav-link article__nav-link--previous" href="{{site.baseurl}}{{page.link-previous}}">{{page.link-title-previous}}</a
@@ -32,6 +26,6 @@ layout: default
 
 {% include swiss-promo.html %}
 
-{% include competition.html %}
+
 
 {% include section-offers.html %}

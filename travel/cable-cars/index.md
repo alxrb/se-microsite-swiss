@@ -5,9 +5,9 @@ class:          cable-cars
 article-order:  3
 section:        travel
 link-previous:  /travel/trains
-link-next:      /competition
+link-next:      /
 link-title-previous: Trains
-link-title-next: Competition
+link-title-next: Overview
 
 description:    >
                 Cable cars aren’t a conventional way of travelling but then, Switzerland really isn’t a conventional country.
